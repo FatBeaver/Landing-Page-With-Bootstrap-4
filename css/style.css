@@ -1,4 +1,38 @@
 @import 'fonts.css';
+body {
+    font-family: 'Open Sans';
+}
+
+.header-background {
+    background-image: url(../images/header.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: 0 10%;
+    padding-bottom: 170px;
+}
+
+.header-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+
+/* ============= NAV =============== */
+
+.menu-bar {
+    position: relative;
+    background: white;
+    padding: 20px 0;
+    color: #212121;
+    z-index: 3;
+}
+
 ul,
 li {
     display: block;
@@ -6,23 +40,92 @@ li {
     margin: 0;
 }
 
-.menu-bar {
-    background: white;
-    padding: 20px 0;
-    color: #212121;
-}
-
 .menu__item {
     margin-left: 37px;
 }
 
 .menu__item a {
-    font-family: 'Open Sans Smibold';
-    font-size: 20px;
+    font-size: 18px;
     color: #212121;
 }
 
 .menu__item a:hover {
     text-decoration: none;
     color: #cecece;
+}
+
+
+/* ================== HEADER ================== */
+
+.header {
+    text-align: center;
+    position: relative;
+    margin-top: 182px;
+    z-index: 3;
+    color: white;
+}
+
+.header__title {
+    font-size: 55px;
+    font-family: 'Open Sans Semibold';
+}
+
+.header__text {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.button {
+    font-family: 'Open Sans Semibold';
+    padding: 10px 25px;
+    margin: 0 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.button_empty {
+    background: transparent;
+    border: 2px solid white;
+}
+
+.button_full {
+    background: #00897b;
+    border: 2px solid #00897b;
+}
+
+.button_empty:hover,
+.button_full:hover {
+    border: 2px dotted white;
+    background: #075c53;
+}
+
+/* ============= ABOUT US ================ */
+.about {
+    padding-top:120px;
+    padding-bottom: 125px;
+    color:black;
+    background:white;
+    text-align: center;
+}
+.about__top-title {
+    font-size: 30px;
+    color: #212121;
+    font-family: 'Open Sans Semibold';
+}
+.about__top-text {
+    font-size: 15px;
+    color: #212121;
+    margin-bottom: 110px;
+}
+
+.about__title {
+    margin-top:30px;
+    margin-bottom:15px;
+    color: #212121;
+    font-size: 20px;
+    font-family: 'Open Sans Semibold';
+}
+.about__text{
+    font-size: 15px;
+    color: #212121;
 }
