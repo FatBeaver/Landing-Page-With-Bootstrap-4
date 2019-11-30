@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/dbc2fc1ff4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Logooo</title>
@@ -170,7 +171,7 @@
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                 </div>
                 <div class="col-xl-8 portfolio-buttons">
-                        <button val="on" class="button-services" filter="all">All</button>
+                        <button val="on" class="button-services active" filter="all">All</button>
                         <button val="off" class="button-services" filter="wd">WEB DESIGN</button>
                         <button val="off" class="button-services" filter="ud">UI/UX DESIGN</button>
                         <button val="off" class="button-services" filter="moc">MOCKUPS</button>
@@ -178,12 +179,48 @@
             </div>
 
             <div class="row portfolio-images">
-                <div filter="wd" class="col-xl-4"><img src="images/item1.png" alt="item1"></div>
-                <div filter="ud" class="col-xl-4"><img src="images/item2.png" alt="item2"></div>
-                <div filter="wd" class="col-xl-4"><img src="images/item3.png" alt="item3"></div>
-                <div filter="moc" class="col-xl-4"><img src="images/item4.png" alt="item4"></div>
-                <div filter="moc" class="col-xl-4"><img src="images/item5.png" alt="item5"></div>
-                <div filter="ud" class="col-xl-4"><img src="images/item6.png" alt="item6"></div>
+                <div filter="wd" class="col-xl-4">
+                    <img src="images/item1.png" alt="item1">
+                    <div class="text">
+                        <h5>Bottle</h5>
+                        <p>WEB DESIGN</p>
+                    </div>    
+                </div>
+                <div filter="ud" class="col-xl-4">
+                    <img src="images/item2.png" alt="item2">
+                    <div class="text">
+                        <h5>Packet</h5>
+                        <p>UI/UX DESIGN</p>
+                    </div>
+                </div>
+                <div filter="wd" class="col-xl-4">
+                    <img src="images/item3.png" alt="item3">
+                    <div class="text">
+                        <h5>Boxes</h5>
+                        <p>WEB DESIGN</p>
+                    </div>
+                </div>
+                <div filter="moc" class="col-xl-4">
+                    <img src="images/item4.png" alt="item4">
+                    <div class="text">
+                        <h5>Flask</h5>
+                        <p>MOCKUPS</p>
+                    </div>
+                </div>
+                <div filter="moc" class="col-xl-4">
+                    <img src="images/item5.png" alt="item5">
+                    <div class="text">
+                        <h5>Second Bottle</h5>
+                        <p>MOCKUPS</p>
+                    </div>
+                </div>
+                <div filter="ud" class="col-xl-4">
+                    <img src="images/item6.png" alt="item6">
+                    <div class="text">
+                        <h5>A Bag</h5>
+                        <p>UI/UX DESIGN</p>
+                    </div>
+                </div>
             </div>
 
             <div class="row portfolio__all">
@@ -194,10 +231,298 @@
         </div>
     </section>
 
+    <section class="pricing">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-xl-7">
+                    <h2 class="about__top-title">Pricing Plan</h2>
+                    <p class="about__top-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-xl-4">
+                    <div class="pricing_card">
+                        <div class="pricing__head">
+                            <p>Free Trail</p>
+                            <sup>$</sup> 00 <sub>per month</sub>
+                        </div>
+    
+                        <div class="pricing__body">
+                            <ul>
+                                <li>30 Free Trail</li>
+                                <li>5 Free Projects</li>
+                                <li>PHP 5 Enabled</li>
+                                <li>24/7 Suports</li>
+                            </ul>
+                        </div>
+    
+                        <div class="pricing__footer">
+                            <button>ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="pricing_card">
+                        <div class="pricing__head">
+                            <p>Beginner Trail</p>
+                            <sup>$</sup> 50 <sub>per month</sub>
+                        </div>
+    
+                        <div class="pricing__body">
+                            <ul>
+                                <li>50 Free Trail</li>
+                                <li>10 Free Projects</li>
+                                <li>PHP 5 Enabled</li>
+                                <li>24/7 Suports</li>
+                            </ul>
+                        </div>
+    
+                        <div class="pricing__footer">
+                            <button>ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="pricing_card">
+                        <div class="pricing__head">
+                            <p>Pro Trail</p>
+                            <sup>$</sup> 99 <sub>per month</sub>
+                        </div>
+    
+                        <div class="pricing__body">
+                            <ul>
+                                <li>100 Free Trail</li>
+                                <li>15 Free Projects</li>
+                                <li>PHP 5 Enabled</li>
+                                <li>24/7 Suports</li>
+                            </ul>
+                        </div>
+    
+                        <div class="pricing__footer">
+                            <button>ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h2 class="about__top-title">Our Team Member</h2>
+                    <p class="about__top-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+            </div>
+
+            <div class="row workers justify-content-center">
+                <div class="col-xl-4">
+                    <img src="images/worker1.png" alt="worker1">
+                    <h4>John Doe</h4>
+                    <p>General Manager</p>
+                    <div class="icons">
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <img src="images/worker2.png" alt="worker1">
+                    <h4>Alexa Biru</h4>
+                    <p>Office Director</p>
+                    <div class="icons">
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <img src="images/worker3.png" alt="worker1">
+                    <h4>Ronobir sing</h4>
+                    <p>Admin</p>
+                    <div class="icons">
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <img src="images/worker3.png" alt="worker1">
+                    <h4>Ronobir sing</h4>
+                    <p>Admin</p>
+                    <div class="icons">
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <img src="images/worker1.png" alt="worker1">
+                    <h4>John Doe</h4>
+                    <p>General Manager</p>
+                    <div class="icons">
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <img src="images/worker3.png" alt="worker1">
+                    <h4>Ronobir sing</h4>
+                    <p>Admin</p>
+                    <div class="icons">
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

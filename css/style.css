@@ -224,3 +224,153 @@ li {
     color:white;
     background: #00897b;
 }
+div[filter]:hover img {
+    filter:brightness(50%);
+    transition: 0.3s ease-in-out;
+}
+.text {
+    display:none;
+}
+div[filter]:hover .text {
+    display:block;
+    width:100%;
+    color:white;
+    position:absolute;
+    top:40%;
+    z-index: 3;
+    text-align: center;
+}
+
+/* ============= PRICING PLAN ================== */
+.pricing {
+    text-align: center;
+    padding-top:125px;
+    padding-bottom: 125px;
+    color: #212121;
+    background:#f0f0f0;
+}
+.pricing_card {
+    background: #fff;
+    transition: 0.2s ease-in-out;
+}
+.pricing_card:hover {
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+}
+.pricing__head {
+    background-image: url(../images/card_head.svg);
+    padding-top:40px;
+    padding-bottom:65px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 211px;
+    color:white;
+    font-size: 50px;
+}
+.pricing__head sub {
+    font-size: 19px;
+    letter-spacing: 0.85px;
+    vertical-align: middle;
+}
+.pricing__head sup {
+    font-size: 25px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+.pricing__head p {
+    font-size: 30px;
+}
+
+.pricing__body {
+    margin-top: 45px;
+    margin-bottom:60px;
+    color: #212121;
+    padding:0px 95px;
+}
+.pricing__body ul li{
+    font-size: 17px;
+    color: #212121;
+    padding-bottom:10px;
+    margin-bottom:27px;
+    border-bottom:1px solid #c5c2c2;
+}
+.pricing__footer {
+    padding-top:20px;
+    padding-bottom: 60px;
+}
+.pricing__footer button {
+    border:1.5px solid black;
+    padding:15px 35px;
+    background: transparent;
+    transition: 0.3s ease-in-out;
+}
+.pricing__footer button:hover {
+    border:1.5px solid #00897b;
+    background: #00897b;
+    color:white;
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.46);
+}
+
+/* ================ TEAM ================== */
+.team {
+    text-align: center;
+    padding-top:120px;
+    padding-bottom:120px;
+}
+.team h4 {
+    font-size:24px;
+    font-family: 'Open Sans Semibold';
+    margin-top:30px;
+}
+.team p {
+    font-size:14px;
+    font-family: 'Open Sans Semibold';
+    margin-bottom: 20px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+}
+.workers {
+    margin-top: 125px;
+}
+.workers img {
+    max-width: 360px;
+}
+.icons a i {
+    transition:0.2s ease-in-out;
+}
+.icons i:nth-child(1) {
+    color:#f0f1f1;
+}
+.icons i:nth-child(2) {
+    color:#00897b;
+}
+
+.icons a:hover i:nth-child(1) {
+    color:#3949ab;
+}
+.icons a:hover i:nth-child(2) {
+    color:#fff;
+}
+.dots-style {
+    margin-top:115px;
+    display:flex;
+    justify-content:center;
+}
+.dots-style button {
+    background: #00897b;
+    border:none;
+    border-radius: 50%;
+    font-size: 0;
+    height: 15px;
+    width:15px;
+    margin:5px;
+}
+.dots-style li[class="slick-active"] button {
+    background:#3949ab;
+    outline:none;
+}
+.dots-style li[class="slick-active"] button:focus, 
+.dots-style li[class="slick-active"] button:active {
+    outline:none;
+}
