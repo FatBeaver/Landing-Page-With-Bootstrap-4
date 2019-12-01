@@ -333,8 +333,8 @@ div[filter]:hover .text {
 .workers {
     margin-top: 125px;
 }
-.workers img {
-    max-width: 360px;
+.slick-slide img {
+    display: inline;
 }
 .icons a i {
     transition:0.2s ease-in-out;
@@ -374,21 +374,18 @@ div[filter]:hover .text {
 .dots-style li[class="slick-active"] button:active {
     outline:none;
 }
+/* ========= BLOG ============ */
 .left > div:first-child {
     order:1;
-    margin-left: -20px;
 }
 .left > div:last-child {
     order:2;
-    padding-left:40px;
 }
 .right > div:first-child {
     order:2;
 }
 .right > div:last-child {
     order:1;
-    margin-left: -20px;
-    margin-right: 20px;
 }
 .blog-post{
     padding-top:60px;
@@ -405,11 +402,6 @@ div[filter]:hover .text {
     width:240px;
     display:flex;
     justify-content: space-between;
-}
-.blog-img {
-    max-width: 540px;
-    width:100%;
-    min-width:300px;
 }
 .blog_butt {
     margin-top: 125px;
@@ -480,7 +472,7 @@ div[filter]:hover .text {
     justify-content: center;
 }
 .form input[type="text"]{
-    width:520px;
+    width:100%;
     border-radius: 10px;
     background-color: #ffffff;
     height: 84px;
@@ -500,7 +492,7 @@ div[filter]:hover .text {
     resize: none;
     padding:10px;
     font-size: 18px;
-    max-width:1092px;
+    width:100%;
 }
 .form input[type="submit"] {
     width: 220px;
@@ -514,10 +506,134 @@ div[filter]:hover .text {
     font-weight: 600;
     letter-spacing: 1px;
 }
+.form input[type="submit"]:hover {
+    opacity: 0.7;
+}
+
 .second-footer{
     text-align: center;
     padding-top:22px;
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 700;
+}
+
+/* ============== Media Requests =============== */
+@media screen and (max-width: 992px) {
+    .blog {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .blog-post {
+        padding-top: 5px ;
+    }
+    .right, .left {
+        margin-top:15px !important;
+        margin-bottom: 15px !important;
+    }
+    .team {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .portfolio {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    .services {
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+    .about__top-text {
+        margin-bottom: 80px;
+    }
+    .pricing {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .pricing__body {
+        margin-top: 35px;
+        margin-bottom:40px;
+        padding:0px 15px;
+    }
+    .about__text {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    textarea {
+        margin-top: 30px;
+    }
+    .marker {
+        font-size: 60px;
+    }
+    .circle-down-text {
+        font-size: 12px;
+    }
+    .left {
+        align-items: center;
+        flex-direction: column;
+    }
+    .right {
+        align-items: center;
+        flex-direction: column;    
+    }
+    .left > div:first-child {
+        order:2;
+        margin-bottom: 35px;
+    }
+    .left > div:last-child {
+        order:1;
+    }
+    .right > div:first-child {
+        order:2;
+        margin-bottom: 35px;
+    }
+    .right > div:last-child {
+        order:1;
+    }
+    .blog-post div {
+        margin-top: 10px;
+    }
+    .icons .fab {
+        font-size: 34px;
+    } 
+    .icons .fas {
+        font-size: 64px;
+    } 
+    .icons span {
+        width:60px;
+    }
+    .workers {
+        margin-top: 50px;
+    }
+    .dots-style {
+        margin-top: 50px;
+    }
+    .sm-card {
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .card-container {
+        justify-content: center !important;
+    }
+    .portfolio-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-buttons button {
+        margin-bottom: 8px;
+    }
+    .portfolio {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .portfolio-txt {
+        margin-bottom: 40px;
+    }
+    .portfolio-images {
+        margin-top: 50px;
+    }
 }

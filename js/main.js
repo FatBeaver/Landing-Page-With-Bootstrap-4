@@ -35,5 +35,14 @@ $(document).ready(function() {
         arrows:false,
         dots:true,
         dotsClass:'dots-style',
+        responsive : [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow:2,
+                    slidesToScroll:2,
+                }
+            }
+        ]
     });
 });
