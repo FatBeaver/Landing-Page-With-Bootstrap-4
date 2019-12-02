@@ -518,6 +518,26 @@ div[filter]:hover .text {
     font-weight: 700;
 }
 
+#toTop {
+    z-index: 999;
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius: 3px;
+    background: #00897b;
+    text-align: center;
+    padding:7px;
+    position:fixed;
+    bottom: 10px;
+    right:10px;
+    cursor: pointer;
+    display: none;
+    color:#212121;
+}
+.menu-icon {
+    display: none;
+} 
+
 /* ============== Media Requests =============== */
 @media screen and (max-width: 992px) {
     .blog {
@@ -557,6 +577,31 @@ div[filter]:hover .text {
     }
     .about__text {
         margin-bottom: 50px;
+    }
+
+    nav {
+        display:none;
+        margin-right:-380px;
+        margin-top: 60px;
+        font-size: 24px;
+    }
+    .menu-icon {
+        background: #00897b;
+        border:none;
+        font-size: 30px;
+        width:50px;
+        height:50px;
+        cursor:pointer;
+        border-radius: 8px;
+        outline:none;
+        display: block;
+    }
+    .menu-icon:hover {
+        box-shadow: 0 3px 25px rgba(0, 0, 0, 0.56);
+    }
+    .menu-icon:focus,
+    .menu-icon:active {
+        outline:none;
     }
 }
 
@@ -635,5 +680,69 @@ div[filter]:hover .text {
     }
     .portfolio-images {
         margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) { 
+    nav {
+        margin-right:-250px;
+    }
+    .circle {
+        width:100px !important;
+        height:100px !important;
+        margin-bottom: 10px;
+    }
+    .item_icons :not(.circle) {
+        margin-top:0px;
+        margin-bottom: 40px;
+    }
+    .circle i {
+        margin-top: 90px !important;
+    }
+    .contact_icons {
+        margin-top: 30px;
+    }
+    .adaptive-email {
+        margin-top: -30px !important;
+    }
+}
+
+@media screen and (max-width: 605px) { 
+    nav {
+        margin-right:-250px;
+    }
+}
+@media screen and (max-width: 500px) { 
+    .icons span {
+        width: 50px;
+    }
+    .icons .fas {
+        font-size: 44px;
+    }
+    .icons .fab {
+        font-size: 24px;
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 468px) { 
+    nav {
+        margin-right:-200px;
+    }
+    .header__title {
+        font-size: 40px !important;
+    }
+    .blog_butt {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 370px) { 
+    nav {
+        margin-right:-130px;
+    }
+}
+@media screen and (max-width: 390px) { 
+    .button_empty {
+        margin-bottom: 15px;
     }
 }

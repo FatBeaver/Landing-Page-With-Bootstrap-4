@@ -27,6 +27,46 @@ $(document).ready(function() {
         }   
     });
 
+
+    // ========= MENU SLIDER SCROLL ===========
+    $('ul.menu > li > a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(target).offset().top,
+        },700);
+    })
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn(300);
+        } else {
+            $('#toTop').fadeOut(300);
+        }
+    });
+    $('#toTop').on('click', function() {
+        $('body, html').animate({
+            scrollTop:0,
+        }, 800);
+    });
+
+
+    // ========= ADAPTIVE MENU =========
+    $('button.menu-icon').on('click', function() {
+        $('nav').slideToggle(500);  
+        $('nav > ul').css({
+            'display':'flex',
+            'flex-direction':'column',
+        });
+        if ($('.menu-icon').html() == '<i class="fas fa-bars"></i>') {
+            $(this).html('<i class="far fa-times-circle"></i>');
+        } else {
+            $(this).html('<i class="fas fa-bars"></i>');
+        }
+    });
+
+
     // ========= Slick Slider ==========
     $('.workers').slick({
         infinite:true,
@@ -41,6 +81,14 @@ $(document).ready(function() {
                 settings: {
                     slidesToShow:2,
                     slidesToScroll:2,
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow:2,
+                    slidesToScroll:2,
+                    vertical:true,
                 }
             }
         ]
